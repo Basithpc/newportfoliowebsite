@@ -1,0 +1,214 @@
+.name{
+    position: absolute;
+    width: 298px;
+    height: 128px;
+    left: 100px;
+    top: 250px;
+
+    font-family: 'morganite';
+    font-style: italic;
+    font-weight: 550;
+    font-size: 70px;
+    line-height: 158px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+}
+
+.Connect{
+    background-color: transparent;
+    position: absolute;
+    width: 110px;
+    height: 35px;
+    left: 1375px;
+    top: 38px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #FFFFFF;
+
+    transition: background-color 0.2s,
+    color 0.2s,
+    border-color 0.2s,
+    font-weight 0.2s;
+}
+
+.Connect:hover{
+    color: black;
+    background-color: #FFFFFF;
+    font-weight: 600;
+}
+
+.Connect:active{
+    color: red;
+    font-weight: 800;
+}
+
+.about{
+    position: absolute;
+    width: 800px;
+    height: 120px;
+    left: 100px;
+    top: 402px;
+
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    color: #858585;
+    transition: color 0.3s;
+
+}
+.about:hover{
+    color: #FFFFFF;
+}
+
+.dp{
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+    width: 450px;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity 0.7s;
+}
+.dp:hover{
+    opacity: 1;
+}
+
+.insta-logo{
+    width: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    opacity: 0.5;
+    filter:saturate(0%);
+    vertical-align: bottom;
+    transition: width 0.2s , opacity 0.2s ,saturate 0.2s;
+}
+
+.insta-logo:hover{
+    width: 30px;
+    opacity: 1;
+    filter:saturate(100%);
+    vertical-align: center;
+}
+
+.logos{
+    margin-left: 25px;
+    vertical-align:center;
+}
+
+.footer{
+    position: absolute;
+    top: 800px;
+    width: 1500px;
+}
+
+.hr{
+    opacity: 0.2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #162938;
+    transition: all 0.3s ease;
+}
+
+.sidebar header{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 70px;
+    background: #858585;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: all 0.3s;
+}
+
+ul li:hover{
+    padding-left: 40px;
+    transition: all 0.2s;
+    color: #858585;
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+    transition: all 0.3s ease;
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: #162938 ;
+    transition: all 0.3s ease;
+
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 20px;
+    font-size: 30px;
+    color: #162938;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+    
+}
